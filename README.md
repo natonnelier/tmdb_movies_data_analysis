@@ -2,6 +2,13 @@
 
 Proyecto de la **cátedra de Análisis de Datos del CEIA - Grupo 9**.
 
+Integrantes:
+- Matías Guillermo Alfaro
+- Rodrigo Hernández
+- Gonzalo Cuervo
+- Nicolas Alberto Tonnelier
+- Marina Andrea Racciatti
+
 Análisis exploratorio de datos (EDA) sobre el dataset **TMDB Movies Dataset 2024**, que contiene información de películas (presupuesto, ingresos, popularidad, géneros, productoras, países, palabras clave, etc.).
 
 ## Cómo ejecutar el notebook
