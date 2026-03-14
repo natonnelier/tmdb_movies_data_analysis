@@ -28,3 +28,7 @@ films_dataset.csv
 films-dataset.zip
 TMDB_movies_dataset_2023.csv
 TMDB_movie_dataset_v11.csv
+
+# Local data directory
+data/
+!data/.gitkeep
