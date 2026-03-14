@@ -3,6 +3,7 @@
 Proyecto de la **cátedra de Análisis de Datos del CEIA - Grupo 9**.
 
 Integrantes:
+
 - Matías Guillermo Alfaro
 - Rodrigo Hernández
 - Gonzalo Cuervo
@@ -10,6 +11,20 @@ Integrantes:
 - Marina Andrea Racciatti
 
 Análisis exploratorio de datos (EDA) sobre el dataset **TMDB Movies Dataset 2024**, que contiene información de películas (presupuesto, ingresos, popularidad, géneros, productoras, países, palabras clave, etc.).
+
+## Setup inicial
+
+Si vas a modificar los notebooks y hacer commits, necesitás configurar `nbstripout` para mantener limpios los notebooks en el repositorio:
+
+```bash
+# Instalar dependencias de desarrollo
+uv sync --group dev
+
+# Configurar nbstripout (una sola vez)
+uv run nbstripout --install
+```
+
+Esto configura un filtro de Git que automáticamente limpia las salidas de los notebooks al hacer commit, evitando archivos innecesarios en el repositorio.
 
 ## Cómo ejecutar el notebook
 
