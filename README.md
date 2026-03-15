@@ -75,7 +75,8 @@ jupyter notebook EDA_movies.ipynb
 
 ## Issues
 
-- **Mediana y moda en `revenue` y `budget`:** Las columnas `revenue` y `budget` no aportan información útil en Mediana y Moda, probablemente por la magnitud de los valores (escala muy grande o distribución que no se refleja bien con esas medidas).
+- **Muchos 0s, especialmente en `revenue` y `budget`:** IMDB usa el valor 0 como "unknown" y `revenue` y `budget` tienen > 90% de unknown values. Se agregaron variables especiales `*_valid` (ejemplo, `budget_valid`) para calcular métricas evitando el sesgo de nulls.
+- **Películas que no son de 2024** Deberíamos filtrarlas?
 - **Columnas en formato array:** Las columnas `genre`, `production_companies`, `production_countries` y `keywords` vienen como arrays/listas. Hay que “aplanarlas” (flatten) o expandirlas para poder analizar bien su relación con otras variables.
 
 ## TODO
