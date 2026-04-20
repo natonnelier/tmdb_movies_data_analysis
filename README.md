@@ -36,7 +36,7 @@ Esto configura un filtro de Git que automáticamente limpia las salidas de los n
 ```bash
 uv init
 uv sync
-uv run jupyter notebook EDA_movies.ipynb
+uv run jupyter notebook tp_grupo_9_movies.ipynb
 ```
 
 O para JupyterLab:
@@ -70,25 +70,5 @@ pip install -e .
 3. Ejecutar Jupyter:
 
 ```bash
-jupyter notebook EDA_movies.ipynb
+jupyter notebook tp_grupo_9_movies.ipynb.ipynb
 ```
-
-## Issues
-
-- **Muchos 0s, especialmente en `revenue` y `budget`:** IMDB usa el valor 0 como "unknown" y `revenue` y `budget` tienen > 90% de unknown values. Se agregaron variables especiales `*_valid` (ejemplo, `budget_valid`) para calcular métricas evitando el sesgo de nulls.
-- **Películas que no son de 2024** Deberíamos filtrarlas?
-- **Columnas en formato array:** Las columnas `genre`, `production_companies`, `production_countries` y `keywords` vienen como arrays/listas. Hay que “aplanarlas” (flatten) o expandirlas para poder analizar bien su relación con otras variables.
-
-## TODO
-
-- [ ] Agregar data de las variables categóricas
-- [ ] Agregar gráficos de cuartiles, distancia intercuartil, etc.
-
-## Ideas
-
-- Explorar relaciones: budget–revenue, language–revenue, popularity–budget, genres–popularity, keywords–popularity
-- Keywords por cantidad (por ejemplo, heatmap)
-- Revenue y Popularity por país y por productora
-- Popularity y Revenue por idioma y por género
-- ¿Mayor revenue implica mayor popularity?
-- Revenue negativo y su relación con otras variables
